@@ -13,6 +13,9 @@ display: flex;
 flex-direction: row;
 align-items: center;
 height: 100%;
+@media only screen and (max-width:480px){
+   flex-direction: column;
+}
 `
 const Left_side = styled.div`
 width:60%;
@@ -21,16 +24,25 @@ display: flex;
 flex-direction:column;
 align-items: center;
 justify-content: center;
+@media only screen and (max-width:480px){
+   width:80%
+}
 `
 const Main_heading = styled.h1`
 text-align:left;
 font-size: 75px;
+@media only screen and (max-width:480px){
+   font-size:45px;
+}
 `
 const Heading_discription = styled.h5`
 text-align:left;
 font-size: 30px;
 color: grey;
 font-weight: 400;
+@media only screen and (max-width:480px){
+   font-size:20px;
+}
 `
 const Left_wrap = styled.div`
 `
@@ -50,9 +62,18 @@ width:40%;
 height: 100%;
 display: flex;
 justify-content: flex-end;
+@media only screen and (max-width:480px){
+   width:100%;
+}
 `
 const Image = styled.img`
 padding: 10% 0 0 10%;
+@media only screen and (max-width:480px){
+   width: 80%;
+   display: flex;
+  padding: 0;
+  justify-self:flex-end ;
+}
 `
 const Shape = styled.div`
 clip-path: polygon(100% 0%, 100% 100%, 46% 100%, 84% 0%);

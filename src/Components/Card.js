@@ -11,6 +11,11 @@ align-items: center;
 box-shadow: -3px 1px 22px 16px rgba(0,0,0,0.08);
 -webkit-box-shadow: -3px 1px 22px 16px rgba(0,0,0,0.08);
 -moz-box-shadow: -3px 1px 22px 16px rgba(0,0,0,0.08);
+
+@media only screen and (max-width:480px){
+    padding: 3%;
+    margin: 2% 0;
+}
 `
 const Button = styled.div`
 background-color: white;
@@ -22,6 +27,8 @@ font-size: 16px;
 text-align: center;
 width: max-content;
 cursor: pointer;
+
+
 `
 const Price = styled.p`
 font-size: 25px;
@@ -31,6 +38,9 @@ margin:15px 0 ;
 font-size: 16px;
 text-align: left;
 width: 100%;
+@media only screen and (max-width:480px){
+    margin:5px 0;
+}
 `
 const Button_down = styled.div`
 border-radius: 10px;

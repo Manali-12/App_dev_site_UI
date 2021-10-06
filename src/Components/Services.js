@@ -23,36 +23,51 @@ justify-content: flex-end;
 width: 40%;
 height: 100%;
 overflow: hidden;
+@media only screen and (max-width:480px){
+    display: none;
+}
 `
 const Right_side = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
 width: 60%;
+@media only screen and (max-width:480px){
+    width: 100%;
+    padding: 5% 5% 5% 17%;
+}
 `
 const Right_side_wrap = styled.div`
 
 `
 const Image = styled.img`
 width: 100%;
-
 margin: 10% auto auto auto ;
 `
 const Heading = styled.h1`
 font-size: 55px;
 font-weight: 600;
-
+@media only screen and (max-width:480px){
+   font-size:35px;
+}
 `
 const Disc = styled.p`
 color: grey;
 font-size: 20px;
 letter-spacing: 1px;
+@media only screen and (max-width:480px){
+   font-size:16px;
+}
 `
 const Card_wrap = styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
 margin-top: 10%;
+@media only screen and (max-width:480px){
+    flex-direction: column;
+
+}
 `
 const Card = styled.div`
 text-align: center;
@@ -61,6 +76,11 @@ box-shadow: -3px 1px 22px 16px rgba(0,0,0,0.08);
 -moz-box-shadow: -3px 1px 22px 16px rgba(0,0,0,0.08);
 width: 25%;
 padding: 16px;
+
+@media only screen and (max-width:480px){
+   width: 45%;
+   margin: 10px 0;
+}
 `
 const Info = styled.p``
 const Button = styled.button`
@@ -73,6 +93,9 @@ padding: 20px 25px;
 font-size: 20px;
 letter-spacing: 2px;
 margin: 10% auto 0;
+@media only screen and (max-width:480px){
+    margin:5px 15% ;
+}
 `
 
 export default function Services() {

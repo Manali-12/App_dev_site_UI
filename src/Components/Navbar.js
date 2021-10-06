@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 const Division = styled.div`
 height:60px;
-font-family: 'Rubik', sans-serif
+font-family: 'Rubik', sans-serif;
+width:100%;
 `
 const Wrap = styled.div`
 display:flex;
@@ -35,7 +36,12 @@ const Page_nav = styled.div`
 margin:0;
 display:flex;
 flex-direction:row;
-justify-content:space-between;`
+justify-content:space-between;
+@media only screen and (max-width:480px){
+    display: none;
+}
+
+`
 const Nav_menu = styled.div`
 margin:0 5px;
 font-size:20px;

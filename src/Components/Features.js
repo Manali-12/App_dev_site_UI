@@ -8,12 +8,16 @@ height: 100%;
 display: flex;
 position: relative;
 
+
 `
 const Left_side = styled.div`
 width: 50%;
 height: 100%;
 display: flex;
 justify-content: flex-end;
+@media only screen and (max-width:480px){
+   display: none;
+}
 `
 const Image = styled.img`
 width: 70%;
@@ -25,6 +29,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 50%;
+@media only screen and (max-width:480px){
+   width: 100%;
+   padding: 5% 5% 10% 17%;
+}
 `
 const Right_side = styled.div`
 `
@@ -32,19 +40,28 @@ const Heading = styled.h1`
 font-weight: 400;
 font-size:55px ;
 margin-top: 30px;
+@media only screen and (max-width:480px){
+    font-size:35px;
+    color: #FB5B5A;
+}
 `
 const Disc = styled.h4`
 font-size: 30px;
 color: darkslategray;
 font-family: 'Courgette', cursive;
 margin-bottom: 10px;
+@media only screen and (max-width:480px){
+   font-size:20px;
+}
 `
 const Brief = styled.h6`
 font-size: 25px;
 color: grey;
 font-weight: 400;
 margin-top: 0;
-
+@media only screen and (max-width:480px){
+  font-size:16px
+}
 `
 const Button = styled.button`
 border-radius: 10px;

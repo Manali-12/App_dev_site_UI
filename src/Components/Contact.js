@@ -43,6 +43,12 @@ border-radius:10px ;
 box-shadow: -3px 1px 22px 16px rgba(0,0,0,0.08);
 -webkit-box-shadow: -3px 1px 22px 16px rgba(0,0,0,0.08);
 -moz-box-shadow: -3px 1px 22px 16px rgba(0,0,0,0.08);
+
+@media only screen and (max-width:480px){
+flex-direction:column;
+margin:5% 0;
+}
+
 `
 const Left = styled.div`
 display: flex;
@@ -74,6 +80,9 @@ width: 100%;
 display:flex;
 justify-content: end;
 z-index: -1;
+@media only screen and (max-width:480px){
+  display: none;
+}
 `
 const Button = styled.button`
 border-radius: 10px;

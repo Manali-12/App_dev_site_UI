@@ -8,7 +8,12 @@ import Price from "./Components/Price";
 import Services from "./Components/Services";
 const Container = styled.div`
 height:100vh;
+width: 100vw;
 font-family: 'Urbanist', sans-serif;
+@media only screen and (max-width:480px){
+    height: auto;
+}
+
 `
 function App() {
   return (

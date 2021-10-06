@@ -9,11 +9,17 @@ display: flex;
 align-items: center;
 justify-content: center;
 padding: 0 10%;
+@media only screen and (max-width:480px){
+padding: 5% 10%;
+}
 `
 const Card_wrap = styled.div`
 display: flex;
 width: 100%;
 justify-content: space-around;
+@media only screen and (max-width:480px){
+flex-direction: column;
+}
 `
 const Shape = styled.div`
 clip-path: polygon(100% 0%, 100% 100%, 76% 100%, 16% 0%);
