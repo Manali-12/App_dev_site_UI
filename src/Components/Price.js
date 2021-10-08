@@ -32,7 +32,7 @@ height: 100%;
 
 export default function Price() {
     return (
-        <Container>
+        <Container id="pricing">
             <Shape />
             <Card_wrap>
                 <Card price="10" plan="Basic" />

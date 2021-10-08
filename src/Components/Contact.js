@@ -105,7 +105,7 @@ margin: 0 10%;
 
 export default function Contact() {
     return (
-        <Container>
+        <Container id="contact">
             <Wrap>
                 <Form_wrap>
                     <Form>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import styled from 'styled-components'
 import lady from "../Images/ladycrop.png"
 import Animatedshapes from './Animatedshapes'
@@ -7,6 +8,8 @@ const Container = styled.div`
 height:100%;
 font-family: 'Urbanist', sans-serif;
 position: relative;
+z-index: -1;
+
 `
 const Intro_wrap = styled.div`
 display: flex;
@@ -83,12 +86,12 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-z-index: -1;
+z-index: -2;
 `
 export default function Intro() {
     return (
         <>
-            <Container>
+            <Container id="home">
                 <Animatedshapes />
                 <Intro_wrap>
                     <Left_side>
@@ -104,7 +107,7 @@ export default function Intro() {
                             </Heading_discription>
                             <Info>
                                 <Button>
-                                    Start Project
+                                    <Link to="pricing" smooth={true} duration={1000}>Start Project</Link>
                                 </Button>
                             </Info>
                         </Left_wrap>

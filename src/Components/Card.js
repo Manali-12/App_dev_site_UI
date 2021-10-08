@@ -26,9 +26,6 @@ border-radius: 25px;
 font-size: 16px;
 text-align: center;
 width: max-content;
-cursor: pointer;
-
-
 `
 const Price = styled.p`
 font-size: 25px;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import styled from 'styled-components'
 import mobile from "../Images/mobile.png"
 
@@ -86,7 +87,7 @@ z-index: -1;
 
 export default function Features() {
     return (
-        <Container>
+        <Container id="features">
             <Left_side>
                 <Image src={mobile}>
 
@@ -107,7 +108,7 @@ export default function Features() {
                         marketing goals, and look fantastic.<br /><br />
                         we care your buisness and guarantee you to achieve marketing goals.
                     </Brief>
-                    <Button>Learn More</Button>
+                    <Button><Link to="services" smooth={true} duration={1000}>Learn More</Link></Button>
                 </Right_side>
             </Right_side_wrap>
             <Shape />
