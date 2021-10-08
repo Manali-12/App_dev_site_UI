@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-scroll'
 import styled from 'styled-components'
 
 
@@ -7,6 +8,7 @@ background-color: black;
 height: 8vh;
 font-family: 'Urbanist', sans-serif;
 width: 100vw;
+margin: 0 0 -10px 0;
 `
 const Wrap = styled.div`
 display: flex;
@@ -20,6 +22,7 @@ align-items: center;
 const Left = styled.div`
 display: flex;
 flex-direction: row;
+margin: 0 10px;
 @media only screen and (max-width:480px){
     margin:5px 0 ;
 }
@@ -46,7 +49,7 @@ export default function Footer() {
                     <Points>Community</Points>
                 </Left>
                 <Right>
-                    HELPRO ©
+                    <Link to="home" smooth={true} duration={1000}>HELPRO ©</Link>
                 </Right>
             </Wrap>
         </Container>

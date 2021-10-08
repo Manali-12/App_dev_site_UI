@@ -1,9 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link as LinkS } from "react-scroll"
+
+
 const Division = styled.div`
-height:60px;
+height:70px;
 font-family: 'Rubik', sans-serif;
 width:100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000000;
+background-color: white;
+box-shadow: 0px 0px 38px -5px rgba(181,181,181,0.75);
+-webkit-box-shadow: 0px 0px 38px -5px rgba(181,181,181,0.75);
+-moz-box-shadow: 0px 0px 38px -5px rgba(181,181,181,0.75);
 `
 const Wrap = styled.div`
 display:flex;
@@ -43,9 +54,15 @@ justify-content:space-between;
 
 `
 const Nav_menu = styled.div`
-margin:0 5px;
+margin:0 10px;
 font-size:20px;
-color:darkslategray;`
+color:grey;
+cursor: pointer;
+
+&::hover{
+    color: darkslategray;
+}
+`
 const Button = styled.button`
 margin-left:40px;
 color: white;
@@ -54,11 +71,12 @@ border-radius: 10px;
 background-color:#560764 ;
 padding: 10px 25px;
 font-size: 16px;
+cursor: pointer;
 `
 
 export default function Navbar() {
     return (
-        <Division>
+        <Division id="features">
             <Wrap>
                 <Left_side>
                     <Logo>
@@ -68,13 +86,13 @@ export default function Navbar() {
                 <Right_side>
                     <Page_nav_wrap>
                         <Page_nav>
-                            <Nav_menu>Home</Nav_menu>
-                            <Nav_menu>Features</Nav_menu>
-                            <Nav_menu>Services</Nav_menu>
-                            <Nav_menu>Pricing</Nav_menu>
-                            <Nav_menu>Contact</Nav_menu>
+                            <Nav_menu ><LinkS to="/" smooth={true} duration={1000}>Home</LinkS></Nav_menu>
+                            <Nav_menu ><LinkS to="features" smooth={true} duration={1000}>Features</LinkS></Nav_menu>
+                            <Nav_menu ><LinkS to="services" smooth={true} duration={1000}>Services</LinkS></Nav_menu>
+                            <Nav_menu><LinkS to="pricing" smooth={true} duration={1000}>Pricing</LinkS></Nav_menu>
+                            <Nav_menu><LinkS to="contact" smooth={true} duration={1000}>Contact</LinkS></Nav_menu>
                         </Page_nav>
-                        <Button>Join Us</Button>
+                        <Button><LinkS to="contact" smooth={true} duration={1000}>Join Us</LinkS></Button>
                     </Page_nav_wrap>
 
                 </Right_side>

@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Route, Switch, Redirect } from "react-router-dom"
+
 import Contact from "./Components/Contact";
 import Features from "./Components/Features";
 import Footer from "./Components/Footer";
@@ -10,6 +12,9 @@ const Container = styled.div`
 height:100vh;
 width: 100vw;
 font-family: 'Urbanist', sans-serif;
+position: relative;
+padding: 0;
+margin: 0;
 @media only screen and (max-width:480px){
     height: auto;
 }
